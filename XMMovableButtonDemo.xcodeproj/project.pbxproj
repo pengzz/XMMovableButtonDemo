@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CC1AC082178297200862C41 /* ZZSuspensionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1AC062178297200862C41 /* ZZSuspensionButton.m */; };
 		C4BB8BA21D8EB8AB00E872F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BB8BA11D8EB8AB00E872F6 /* main.m */; };
 		C4BB8BA51D8EB8AB00E872F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BB8BA41D8EB8AB00E872F6 /* AppDelegate.m */; };
 		C4BB8BA81D8EB8AB00E872F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BB8BA71D8EB8AB00E872F6 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CC1AC062178297200862C41 /* ZZSuspensionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSuspensionButton.m; sourceTree = "<group>"; };
+		1CC1AC072178297200862C41 /* ZZSuspensionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSuspensionButton.h; sourceTree = "<group>"; };
 		C4BB8B9D1D8EB8AB00E872F6 /* XMMovableButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMMovableButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BB8BA11D8EB8AB00E872F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4BB8BA31D8EB8AB00E872F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CC1AC052178297200862C41 /* ZZSuspensionButton */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1AC072178297200862C41 /* ZZSuspensionButton.h */,
+				1CC1AC062178297200862C41 /* ZZSuspensionButton.m */,
+			);
+			name = ZZSuspensionButton;
+			path = Classes/ZZSuspensionButton;
+			sourceTree = SOURCE_ROOT;
+		};
 		C4BB8B941D8EB8AA00E872F6 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		C4BB8B9F1D8EB8AB00E872F6 /* XMMovableButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1AC052178297200862C41 /* ZZSuspensionButton */,
 				C4BB8BC51D8EB8BD00E872F6 /* XMMovableButton */,
 				C4BB8BA31D8EB8AB00E872F6 /* AppDelegate.h */,
 				C4BB8BA41D8EB8AB00E872F6 /* AppDelegate.m */,
@@ -233,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC1AC082178297200862C41 /* ZZSuspensionButton.m in Sources */,
 				C4BB8BCD1D8EBB7000E872F6 /* SecondViewController.m in Sources */,
 				C4BB8BA81D8EB8AB00E872F6 /* ViewController.m in Sources */,
 				C4BB8BA51D8EB8AB00E872F6 /* AppDelegate.m in Sources */,
@@ -424,6 +439,7 @@
 				C4BB8BC11D8EB8AB00E872F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4BB8BC21D8EB8AB00E872F6 /* Build configuration list for PBXNativeTarget "XMMovableButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +448,7 @@
 				C4BB8BC41D8EB8AB00E872F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

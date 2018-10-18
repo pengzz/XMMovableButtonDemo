@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XMMovableButton.h"
 #import "SecondViewController.h"
+#import "ZZSuspensionButton.h"
 
 @interface ViewController ()
 
@@ -31,13 +32,30 @@
         CGFloat buttonX=[UIScreen mainScreen].bounds.size.width-buttonW;
         CGFloat buttonY=[UIScreen mainScreen].bounds.size.height-buttonH-50;
     
-        XMMovableButton *movableButton=[[XMMovableButton alloc] init];
+    {
+//        XMMovableButton *movableButton=[[XMMovableButton alloc] init];
+//        movableButton.frame=CGRectMake(buttonX, buttonY, buttonW, buttonH);
+//        //点击事件
+//        [movableButton addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+    }
     
-        movableButton.frame=CGRectMake(buttonX, buttonY, buttonW, buttonH);
-        
-        //点击事件
-        [movableButton addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
-        
+    ZZSuspensionButton *movableButton=[[ZZSuspensionButton alloc] init];
+    movableButton.frame=CGRectMake(buttonX, buttonY, buttonW, buttonH);
+    {
+        {
+            movableButton.topSpace = 44+44;
+            movableButton.leftSpace = 10;
+            movableButton.rightSpace = 30;
+            movableButton.bottomSpace = 38;
+            movableButton.dockable = YES;
+            movableButton.type = 1;
+        }
+        __weak typeof(self) weakSelf = self;
+        movableButton.suspensionButtonClickBlock = ^(UIButton *suspensionButton){
+            [weakSelf buttonClick];
+        };
+    }
+    
         //圆角
         movableButton.layer.cornerRadius=buttonW/2;
         movableButton.layer.masksToBounds=YES;
