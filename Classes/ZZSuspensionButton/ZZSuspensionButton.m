@@ -2,8 +2,8 @@
 //  ZZSuspensionButton.m
 //  ZZSuspensionButton
 //
-//  Created by PengZhiZhong on 2018/10.
-//  Copyright © 2018年 pzz. All rights reserved.
+//  Created by pzz on 2018/10.
+//  Copyright © 2018年 zz. All rights reserved.
 //
 
 #import "ZZSuspensionButton.h"

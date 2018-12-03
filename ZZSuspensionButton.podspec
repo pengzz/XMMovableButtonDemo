@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZZSuspensionButton"
-  s.version      = "0.0.1"
-  s.summary      = "HaHa,one suspension button."
+  s.version      = "0.0.2"
+  s.summary      = "HaHa, one suspension button."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -51,9 +51,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "pzz" => "pzz1284@163.com" }
+  s.author    = "pzz"
+  #s.author             = { "name" => "email address" }
   # Or just: s.author    = "pzz"
-  # s.authors            = { "pzz" => "pzz1284@163.com" }
+  # s.authors            = { "pzz" => "email address" }
   # s.social_media_url   = "http://twitter.com/pzz"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
